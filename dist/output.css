@@ -554,12 +554,17 @@ video {
   display: none;
 }
 
-.mb-\[\] {
-  margin-bottom: ;
+.my-\[25px\] {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-.mb-\[25\] {
-  margin-bottom: 25;
+.mb-\[10px\] {
+  margin-bottom: 10px;
+}
+
+.mb-\[200px\] {
+  margin-bottom: 200px;
 }
 
 .mb-\[25px\] {
@@ -570,28 +575,40 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[50\] {
-  height: 50;
 }
 
 .h-\[50px\] {
   height: 50px;
 }
 
-.w-\[\] {
-  width: ;
-}
-
 .w-\[200px\] {
   width: 200px;
+}
+
+.w-\[90px\] {
+  width: 90px;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
@@ -606,40 +623,33 @@ video {
   justify-content: space-around;
 }
 
-.gap-9 {
-  gap: 2.25rem;
-}
-
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
+.gap-16 {
+  gap: 4rem;
 }
 
 .gap-6 {
   gap: 1.5rem;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.gap-8 {
+  gap: 2rem;
 }
 
-.rounded-\[\] {
-  border-radius: ;
-}
-
-.rounded-\[50\] {
-  border-radius: 50;
+.rounded-\[20px\] {
+  border-radius: 20px;
 }
 
 .rounded-\[50px\] {
   border-radius: 50px;
 }
 
-.bg-\[\] {
-  background-color: ;
+.border {
+  border-width: 1px;
+}
+
+.border-blue-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#458FF6\] {
@@ -647,16 +657,17 @@ video {
   background-color: rgb(69 143 246 / var(--tw-bg-opacity, 1));
 }
 
-.p-\[\] {
-  padding: ;
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.p-\[30\] {
-  padding: 30;
+.bg-custom-pattern {
+  background-image: url('src/images/Vector.svg');
 }
 
-.p-\[30px\] {
-  padding: 30px;
+.p-\[25px\] {
+  padding: 25px;
 }
 
 .p-\[50px\] {
@@ -667,20 +678,36 @@ video {
   text-align: center;
 }
 
-.text-\[48pc\] {
-  font-size: 48pc;
+.text-\[24px\] {
+  font-size: 24px;
 }
 
 .text-\[48px\] {
   font-size: 48px;
 }
 
-.text-\[\] {
-  color: ;
+.shadow-\[0px_8px_16px_\#ABBED166\] {
+  --tw-shadow: 0px 8px 16px #ABBED166;
+  --tw-shadow-colored: 0px 8px 16px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex-row {
+    flex-direction: row;
   }
 }

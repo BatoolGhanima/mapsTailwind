@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-pattern': "url('src/images/Vector.svg')",
+        'another-pattern': "url('/path-to-another-image.jpg')",
+      },
       colors: {
         customGreen: {
           light : '#F5F7FA',
